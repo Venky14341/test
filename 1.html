@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); 
+        grid-gap: 10px;
+        padding: 20px;
+      }
+  
+      .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 1.2rem;
+      }
+  
+      .logo {
+        grid-column: span 3; 
+        background-color: #4caf50;
+        color: white;
+      }
+  
+      .navigation {
+        grid-column: span 5; 
+        background-color: #2196f3;
+        color: white;
+      }
+  
+      .content {
+        grid-column: span 8; 
+        background-color: #ff9800;
+        color: white;
+      }
+  
+      .footer {
+        grid-column: span 8; 
+        background-color: #795548;
+        color: white;
+      }
+  
+      .box {
+        background-color: #9c27b0;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+        <h1 style="text-align: center;">Periodic Table Style Grid</h1>
+        <div class="grid-container">
+          <div class="grid-item logo">Logo</div>
+          <div class="grid-item navigation">Navigation</div>
+          <div class="grid-item content">Content</div>
+      
+          <div class="grid-item box">2</div>
+          <div class="grid-item box">1</div>
+          <div class="grid-item box">3</div>
+          <div class="grid-item box">4</div>
+          <div class="grid-item box">5</div>
+          <div class="grid-item box">6</div>
+          <div class="grid-item box">7</div>
+          <div class="grid-item box">8</div>
+      
+          <div class="grid-item footer">Footer</div>
+        </div>
+</body>
+</html>
